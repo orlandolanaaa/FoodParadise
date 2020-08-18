@@ -19,7 +19,7 @@ const SearchKeyword = (props) => (
                               <div className="col">
                               <button
                                   className="btn btn-primary"
-                                  type="button"
+                                  onClick={props.onClickAddToCriteria}
                               >
                                   Add to criteria
                               </button>

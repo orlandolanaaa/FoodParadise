@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CategoryList = (props) => (
-    props.categories && (
+    props.categories ? (
       <div className="list-group">
         {props.categories.map(category => (
           <button
@@ -13,6 +13,8 @@ const CategoryList = (props) => (
           </button>
         ))}
       </div>
+    ) : (
+      <p>Loading...</p>
     )
 )
 
